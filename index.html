@@ -1,0 +1,142 @@
+<!--<!DOCTYPE html> Identifica la vercion de html 5-->
+<!DOCTYPE html>
+
+<!--(html) se inicia el codigo HTML y (lang="es") se establece lenguage en español-->
+<html lang="es-ES">
+
+<!--(head) provee la información general (metadatos) acerca del documento como el título los enlaces a scripts y hojas de estilos-->
+    <head>
+        <!--(title) Ayuda a definir rl titulos de el documento-->
+        <title>Empresa Servicios Leoncio </title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@400..700&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap" rel="stylesheet">
+
+        
+        <link rel="stylesheet" href="css/style2.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+    <!--(body) es el area en donde se el contenido visible de la pagina web-->
+    <body>
+
+
+        <nav>
+            <!--(ul) ayuda a definir una lista desordenada-->
+            <ul>
+                <!--(li)se encarga de declara cada uno de los elementos de una lista -->
+                <!--<a> define un enlase  hacia otra pagina o hacia un seccion en la pagina-->
+                <!--(href)establece el ipervinculo por URL o seccion en la pagina-->
+                <li><a href="#clientes">CLIENTES</a></li>
+                <li><a href="#productos">PRODUCTOS</a></li>
+                <li><a href="#contactenos">CONTACTENOS</a></li>
+            </ul>
+        </nav>
+
+
+
+        <!--(section) sirve para determinar el contenido de la pagina web-->
+        <section id="empresa" class="clase empresac" >
+            <div class="espacio"></div>
+            <!--(article) especifica el contenido independiente y autonomo-->
+            <article>
+                <!--(div) es un contenedor generico para otros elementos ya que no descrive el contenido que contiene-->
+                <div class="titular">
+                    <h1>SERVICIOS LEONCIO </h1> 
+                </div>
+                <div class="Descripcion">
+                    <p>Nuestra empresa esta dedicada a la venta de seguros para mototaxi normalmente 
+                    llamado Afocat el cual es una ayuda a la ora de accidentes de motos,autos,etc.</p><br>
+                </div>
+            </article>
+        </section>
+
+
+
+        <section id="clientes" class="clase clientes-html bloque">
+            <article>
+                <figure>
+                    <img src="img/clientes.png" width="200"/>
+                </figure>
+                <div class="texto">
+                    <h3>NUESTROS CLIENTES</h3>
+                    <ul>
+                        <li>Conductores de Mototaxi</li>
+                        <li>Conductores de Auto </li>
+                        <li>Y todo vehiculo de uso Publico</li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+
+
+    <section class="clase productos-html bloque">
+        <article>
+            <!--(br) sirve para crear un salto de line dentro de un texto-->
+            
+            <!--(Figure) Nos permite almacenar una imagen -->
+                <figure>
+                <!--<img> define la imagen en la pagina web-->
+                <!--(src) especifica la aubicacion de la imagen-->
+                <!--(width) especifica el tamaño de la imagen -->
+                    <img src="img/MOTOTAXI-SELVA_3.jpg" width="250"/>
+                </figure>
+            <div class="texto">
+                <h3>PRODUCTOS</h3>
+                <!--(p)es el apropiado para distribuir el texto en párrafos-->
+                <p>Para las motos el Afocat esta costando $120
+                </p>
+                <!-- (a) href se utilisa para poner enlaces -->
+                
+                <a href="https://afocatnuevohorizonte.com/#"target="_blank">Para mas Informacion</a>
+            </div>
+                
+        </article>
+    </section>
+
+        <section id="contactenos" class="contacto Final">
+            <!--<h3>CONTACTENOS</h3>-->
+            <!--Movil: 977 287 312-->
+            <a href="mailto:nuevohorizonte@gmail.com" target="_blank">nuevohorizonte@gmial.com</a>
+        </section>
+
+
+
+        
+
+        <script>
+
+            let mensajes = {
+                m1: 'Bienvenido Antony',
+                m2:'Error Contraseña o Usuario Equivocado',
+                m3:'El Servidor a Cerrado Sus Servicios' 
+            };
+
+                window.alert(mensajes.m2);
+
+            
+
+            let elementotitulo = document.querySelector('.titular');
+            let figureElements = document.querySelectorAll('figure');
+
+            elementotitulo.style.background = 'red'
+
+            figureElements.forEach(function (element){
+                
+            ;
+                //console.log(emptyElement);
+                element.style.background = 'green';
+            });
+
+
+            
+
+        </script>
+
+
+
+    </body>
+</html>
